@@ -35,13 +35,14 @@
                 @foreach ($users as $user)
                 <tr>
                   <td>{{ $user->serial_no }}</td>
-                  <td>{{ $user->id_no }}</td>
+                  <td>{{ $user->id }}</td>
                   <td>{{ $user->name }}</td>
                   <td>{{ $user->locality }}</td>
                   <td>{{ $user->farmers_account }}</td>
                   <td>{{ $user->farmers_phone }}</td>
-                  <td><a class="table-btn" href="#">Edit</a>
-                      <a class="table-btn1" href='delete/{{ $user->id_no }}'>Delete</a>
+                  <td>
+                      <a class="table-btn" href="#">Edit</a>
+                      <a class="table-btn1" href="{{ route('delete.farmer',$user->id)}}">Delete</a>
                   </td>
                 </tr>
                 @endforeach

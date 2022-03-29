@@ -31,10 +31,10 @@
                 <span class="details">Serial-No:</span>
                 <input type="text" name="serial_no" placeholder="Enter the number" required>
               </div>
-              <div class="input-box">
+              {{-- <div class="input-box">
                 <span class="details">Id-No:</span>
-                <input type="text" name="id_ no" placeholder="Enter ID" required>
-              </div>
+                <input type="text" name="id" placeholder="Enter ID" required>
+              </div> --}}
               <div class="input-box">
                 <span class="details">Name of Farmer:</span>
                 <input type="text" name="name" placeholder="Enter the name" required>
