@@ -25,7 +25,6 @@
                 <h1 class="table-name">Farmer-List</h1>
                 <tr>
                   <th>Serial No:</th>
-                  <th>Farmer No:</th>
                   <th>ID No:</th>
                   <th>Name</th>
                   <th>Locality</th>
@@ -33,134 +32,25 @@
                   <th>Phone No:</th>
                   <th>Action</th>
                 </tr>
+                @foreach ($users as $user)
                 <tr>
-                  <td>1</td>
-                  <td>101010</td>
-                  <td>Germany</td>
-                  <td>Germany</td>
-                  <td>Germany</td>
-                  <td>Germany</td>
-                  <td>Germany</td>
-                  <td><button class="table-btn">Edit</button>
-                      <button class="table-btn1">Delete</button>
+                  <td>{{ $user->serial_no }}</td>
+                  <td>{{ $user->id_no }}</td>
+                  <td>{{ $user->name }}</td>
+                  <td>{{ $user->locality }}</td>
+                  <td>{{ $user->farmers_account }}</td>
+                  <td>{{ $user->farmers_phone }}</td>
+                  <td><a class="table-btn" href="#">Edit</a>
+                      <a class="table-btn1" href='delete/{{ $user->id_no }}'>Delete</a>
                   </td>
                 </tr>
-                <tr>
-                    <td>2</td>
-                    <td>202020</td>
-                    <td>Germany</td>
-                    <td>Germany</td>
-                    <td>Germany</td>
-                    <td>Germany</td>
-                    <td>Germany</td>
-                    <td><button class="table-btn">Edit</button>
-                        <button class="table-btn1">Delete</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>3</td>
-                    <td>303030</td>
-                    <td>Germany</td>
-                    <td>Germany</td>
-                    <td>Germany</td>
-                    <td>Germany</td>
-                    <td>Germany</td>
-                    <td><button class="table-btn">Edit</button>
-                        <button class="table-btn1">Delete</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>4</td>
-                    <td>404040</td>
-                    <td>Germany</td>
-                    <td>Germany</td>
-                    <td>Germany</td>
-                    <td>Germany</td>
-                    <td>Germany</td>
-                    <td><button class="table-btn">Edit</button>
-                        <button class="table-btn1">Delete</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>5</td>
-                    <td>505050</td>
-                    <td>Germany</td>
-                    <td>Germany</td>
-                    <td>Germany</td>
-                    <td>Germany</td>
-                    <td>Germany</td>
-                    <td><button class="table-btn">Edit</button>
-                        <button class="table-btn1">Delete</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>6</td>
-                    <td>606060</td>
-                    <td>Germany</td>
-                    <td>Germany</td>
-                    <td>Germany</td>
-                    <td>Germany</td>
-                    <td>Germany</td>
-                    <td><button class="table-btn">Edit</button>
-                        <button class="table-btn1">Delete</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>7</td>
-                    <td>707070</td>
-                    <td>Germany</td>
-                    <td>Germany</td>
-                    <td>Germany</td>
-                    <td>Germany</td>
-                    <td>Germany</td>
-                    <td><button class="table-btn">Edit</button>
-                        <button class="table-btn1">Delete</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>8</td>
-                    <td>808080</td>
-                    <td>Germany</td>
-                    <td>Germany</td>
-                    <td>Germany</td>
-                    <td>Germany</td>
-                    <td>Germany</td>
-                    <td><button class="table-btn">Edit</button>
-                        <button class="table-btn1">Delete</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>9</td>
-                    <td>909090</td>
-                    <td>Germany</td>
-                    <td>Germany</td>
-                    <td>Germany</td>
-                    <td>Germany</td>
-                    <td>Germany</td>
-                    <td><button class="table-btn">Edit</button>
-                        <button class="table-btn1">Delete</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>10</td>
-                    <td>010101</td>
-                    <td>Germany</td>
-                    <td>Germany</td>
-                    <td>Germany</td>
-                    <td>Germany</td>
-                    <td>Germany</td>
-                    <td><button class="table-btn">Edit</button>
-                        <button class="table-btn1">Delete</button>
-                    </td>
-                  </tr>
-              </table>
-              
+                @endforeach
+              </table>    
         </div>
         <div class="add">
-            <a href="add-farmer">
-              <button class="addbtn">Add Farmer</button>
-            </a> 
+        <a class="addbtn" href="add-farmer">Add Farmer</a>
         </div>
+        <div class="footer"></div>
     </div>
 </body>
 </html>

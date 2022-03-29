@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\DeleteController;
+use App\Http\Controllers\FetchDataController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MemberController;
 use App\Models\add_farmer;
@@ -41,3 +43,9 @@ Route::get('/add-farmer', function () {
 });
 
 Route::post('/add-farmer',[MemberController::class,'addData'])->name('add_farmer.store');
+
+Route::get('/farmer-list',[FetchDataController::class,'index']);
+
+Route::get('delete-records',[DeleteController::class,'index']);
+
+Route::get('delete/{id_no}',[DeleteController::class,'destroy'])->name('delete.farmer');

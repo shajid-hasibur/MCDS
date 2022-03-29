@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>add-farmer</title>
+    <title>Add Farmer</title>
     <link rel="stylesheet" href="{{ asset('css/add-farmer.css') }}">
 </head>
 <body>
@@ -14,12 +14,12 @@
           
             <a class="nav-btn" href="home">Home</a>
             <a class="nav-btn" href="farmer-list">Farmers</a>
-            <a class="nav-btn">Employees</a>
-            <a class="nav-btn">Deliveries</a>
-            <a class="nav-btn">Payments</a>
-            <a class="nav-btn">Reports</a>
-            <a class="nav-btn">Shajid</a>
-            <a class="nav-btn">Settings</a>
+            <a class="nav-btn" href="#">Employees</a>
+            <a class="nav-btn" href="#">Deliveries</a>
+            <a class="nav-btn" href="#">Payments</a>
+            <a class="nav-btn" href="#">Reports</a>
+            <a class="nav-btn" href="#">Shajid</a>
+            <a class="nav-btn" href="#">Settings</a>
         </div>
         <div class="reg-form">
             <div class="title">Add Farmers</div>
@@ -57,7 +57,8 @@
             </div>
           </form>
         </div>
-      </div>    
+      </div>
+      <div class="footer"></div>    
     </div>
 </body>
 </html>
